@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 10px 10px;
+    background-color: rgba(127, 255, 212, 0.534);
+
+}
+
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    ul{
+        margin: 10px;
+    }
+
+    li{
+        border: 1px solid blue;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 10px 0px 0 0;
+        list-style-type:none ;
+        text-align: center;
+    }
+
+    li:hover{
+        border: 1px solid blue;
+        background-color: aqua;
+        cursor: pointer;
+        
+    }
+
+    .social img{
+        padding-right: 68px;
+        padding-left: 51px;
+
+    }
+
+    .social:hover{
+        cursor: pointer;
+    }
+
+    h4{
+        display: none;
+    }
+
+
+
+    .logo{
+        img{
+            height: 110px;
+        }
+    }
+
+    label{
+        img{
+            width: 30px;
+        }
+    }
+
+    input{
+        display:none
+    }
+
+
+
+    .social{
+        img{
+            height: 30px;
+        }
+        padding: 0px;
+    }
+
+    .collapse{
+        flex-basis:100%;
+        max-height:0;
+        overflow:hidden;
+    }
+    
+    input:checked ~ .collapse{
+        max-height:unset;
+    }
+
+}
+h2{
+    height: 30px;
+    width: 200px;
+}
+
+
+
+
+
+@media screen and(min-width:650px) {
+    header{
+        nav{
+    position: relative;
+            ul{
+                display: flex;
+                list-style: none;
+                position: absolute;
+                left:41%;
+                margin:25PX ;
+                
+        
+    
+                li{
+                    border: 1px solid rgb(77, 138, 158);
+                    padding: 5px 7px;
+                    font-size: larger;
+                    margin-left:8px ;
+                }
+            }
+            label{
+                display: none;
+            }
+            .collapse{
+                flex-basis: unset;
+                max-height:unset;
+            }
+
+            .social{
+                margin-top: 12px;
+                img{
+                    padding: 12px;
+                }
+    
+            }
+
+           .social:hover{
+                cursor: pointer;
+            }
+
+            h4{
+                display: inline;
+                margin: 15px 0 0 41px;
+                background-color: aquamarine;
+                padding: 10px;
+                border-radius: 10px;
+                
+            }
+
+            li:hover{
+                border: 1px solid blue;
+                background-color: aqua;
+                cursor: pointer;
+            }
+        }
+    }
+        
+    }

@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding: 10px 10px;
+  background-color: rgba(127, 255, 212, 0.534);
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+nav ul {
+  margin: 10px;
+}
+nav li {
+  border: 1px solid blue;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 10px 0px 0 0;
+  list-style-type: none;
+  text-align: center;
+}
+nav li:hover {
+  border: 1px solid blue;
+  background-color: aqua;
+  cursor: pointer;
+}
+nav .social img {
+  padding-right: 68px;
+  padding-left: 51px;
+}
+nav .social:hover {
+  cursor: pointer;
+}
+nav h4 {
+  display: none;
+}
+nav .logo img {
+  height: 110px;
+}
+nav label img {
+  width: 30px;
+}
+nav input {
+  display: none;
+}
+nav .social {
+  padding: 0px;
+}
+nav .social img {
+  height: 30px;
+}
+nav .collapse {
+  flex-basis: 100%;
+  max-height: 0;
+  overflow: hidden;
+}
+nav input:checked ~ .collapse {
+  max-height: unset;
+}
+
+h2 {
+  height: 30px;
+  width: 200px;
+}
+
+@media screen and (min-width: 650px) {
+  header nav {
+    position: relative;
+  }
+  header nav ul {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    left: 41%;
+    margin: 25PX;
+  }
+  header nav ul li {
+    border: 1px solid rgb(77, 138, 158);
+    padding: 5px 7px;
+    font-size: larger;
+    margin-left: 8px;
+  }
+  header nav label {
+    display: none;
+  }
+  header nav .collapse {
+    flex-basis: unset;
+    max-height: unset;
+  }
+  header nav .social {
+    margin-top: 12px;
+  }
+  header nav .social img {
+    padding: 12px;
+  }
+  header nav .social:hover {
+    cursor: pointer;
+  }
+  header nav h4 {
+    display: inline;
+    margin: 15px 0 0 41px;
+    background-color: aquamarine;
+    padding: 10px;
+    border-radius: 10px;
+  }
+  header nav li:hover {
+    border: 1px solid blue;
+    background-color: aqua;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=index.css.map */
